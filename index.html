@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <meta name="viewport" content="width-device-width", initial-scale=1.0>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+       <div class="container">
+           <div class="navbar">
+               <img src="images/oktoberfesten.png" class="logo">
+               <nav>
+                   <ul>
+                       <li><a href="">Home</a></li>
+                        <li><a href="location.html">Location</a></li>
+                         <li><a href="vejr.html">Weather forecast</a></li>
+                                  <li><a href="">Contact Us</a></li>
+                         
+                   </ul>
+               </nav>
+            
+               
+           </div>
+           <div class="row">
+               <div class="col">
+                   <div class="text-box">
+                       <h3>Festival</h3>
+                       <h1><b>Oktoberfest</b><br> Is The <b>Ultimate </b>Beer Festival</h1>
+                   </div>
+               </div>
+              
+           </div>
+       </div>
+       <div class="product">
+      <div class="product-small-img">
+            <img  src="images/beer.jpg.jpg"onclick="myFunction(this)">
+      <img src="images/billede.jpg.jpg" onclick="myFunction(this)">
+            <img src="images/2.jpg" onclick="myFunction(this)">
+              <img src="images/3.jpg" onclick="myFunction(this)">
+                <img src="images/4.jpg" onclick="myFunction(this)">
+      </div>
+             <!-- Dette er en class så galleriet kan vises i fuldt billede - Står i JS  -->  
+<div class="img-container">
+    <img id="imageBox" src="images/beer.jpg.jpg">
+</div>
+  </div>
+     <!-- JavaScript med Funtion og Elements "galleri"  -->  
+   <script>
+       function myFunction(smallImg) 
+       {
+       var fullImg = document.getElementById("imageBox");
+        fullImg.src = smallImg.src;
+       }
+        </script>
+        
+    </body>
+</html>
